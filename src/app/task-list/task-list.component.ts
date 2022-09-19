@@ -11,11 +11,6 @@ import { TaskItem } from './../models/task-item';
 
 export class TaskListComponent implements OnInit {
 
-  title: string = "Test Title";
-  todoItem: string = "I'm a todo item!";
-  test: string = "Test stuff"
-  todoItemsList: string[] = [];
-
   taskList: TaskItem[] = [];
   newTaskDescription: string = "";
 
@@ -37,14 +32,6 @@ export class TaskListComponent implements OnInit {
         completed: false
       }
     ]
-
-    this.title = "Test title changed in ngOnInit";
-  }
-
-  // REMOVE THIS FUNCTION
-  updateList() {
-    this.todoItemsList.push(this.todoItem);
-    this.todoItem = "";
   }
 
   addTask() {
