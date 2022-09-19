@@ -40,13 +40,19 @@ export class TaskListComponent implements OnInit {
     ]
   }
 
-  // Add a task on top of the list via index 0
+  // Add a task on top of the list (via index 0)
   addTask() {
     this.taskList.splice(0, 0, {
       description: this.newTaskDescription,
       completed: false
     });
     this.newTaskDescription = "";
+  }
+
+  // WARNING: NOT WORKING YET!!!
+  // Removes the task the user wants to delete
+  removeTask(index: number) {
+    this.taskList.splice(0, 0)
   }
 
 }
