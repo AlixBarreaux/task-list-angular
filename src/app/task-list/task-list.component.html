@@ -1,10 +1,10 @@
 <h1>Task List</h1>
 
 <section class=task-list-form>
-    <!-- <label for=""></label> -->
-    <!-- <input [(ngModel)]="test" type="text" [placeholder]="todoItem" /> -->
-    <input type="text" placeholder="Write a task..." [(ngModel)]="newTaskDescription" />
-    <button (click)="addTask()">+</button>
+    <form (submit)="addTask()">
+        <input type="text" name="newTaskDescription" placeholder="Write a task..." [(ngModel)]="newTaskDescription" />
+        <button>+</button>
+    </form>
 </section>
 
 
