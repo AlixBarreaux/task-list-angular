@@ -1,0 +1,14 @@
+<p>task-list works!</p>
+<h1>{{ title }}</h1>
+
+<section class=task-list-form>
+    <!-- <label for=""></label> -->
+    <!-- <input [(ngModel)]="test" type="text" [placeholder]="todoItem" /> -->
+    <input type="text" placeholder="Write a task..." [(ngModel)]="newTaskDescription" />
+    <button (click)="addTask()">+</button>
+</section>
+
+
+<ul *ngFor="let task of taskList; let index = index;" class="tasks-panel">
+    <app-task-item [description]="task.description" [completed]="task.completed"></app-task-item>
+</ul>
