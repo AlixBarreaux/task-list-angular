@@ -48,11 +48,11 @@ export class TaskListComponent implements OnInit {
   }
 
   addTask() {
-    
-    this.taskList.push({
+    this.taskList.splice(0, 0, {
       description: this.newTaskDescription,
       completed: false
     });
+    this.newTaskDescription = "";
   }
 
 }
