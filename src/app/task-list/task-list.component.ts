@@ -52,7 +52,7 @@ export class TaskListComponent implements OnInit {
   // WARNING: NOT WORKING YET!!!
   // Removes the task the user wants to delete
   removeTask(index: number) {
-    this.taskList.splice(0, 0)
+    this.taskList.splice(0, 1)
   }
 
 }
