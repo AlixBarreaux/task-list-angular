@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class TaskItemComponent implements OnInit {
 
-  @Input() description: string = "Default task description";
+  @Input() description: string = "";
   @Input() completed: boolean = false;
 
   constructor() { }
