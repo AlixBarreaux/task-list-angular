@@ -11,13 +11,19 @@ import { TaskItem } from './../models/task-item';
 
 export class TaskListComponent implements OnInit {
 
+  // Contains all the tasks and their respective data
   taskList: TaskItem[] = [];
+  // Value holding the user input for a new task
   newTaskDescription: string = "";
 
   constructor() {}
 
   ngOnInit(): void {
+    this.initializeDummyTasks()
+  }
 
+  // Testing: Display some dummy tasks on startup
+  initializeDummyTasks() {
     this.taskList = [
       {
         description: "Description 1",
