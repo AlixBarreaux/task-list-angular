@@ -40,6 +40,7 @@ export class TaskListComponent implements OnInit {
     ]
   }
 
+  // Add a task on top of the list via index 0
   addTask() {
     this.taskList.splice(0, 0, {
       description: this.newTaskDescription,
