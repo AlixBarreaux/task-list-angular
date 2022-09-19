@@ -5,6 +5,7 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './task-item.component.html',
   styleUrls: ['./task-item.component.css']
 })
+
 export class TaskItemComponent implements OnInit {
 
   @Input() description: string = "Default task description";
